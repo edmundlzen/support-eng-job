@@ -23,7 +23,7 @@ describe('TaskDisplay', () => {
   });
 
   test('filterByPriority finds high priority tasks', () => {
-    const highTasks = display.filterByPriority("HIGH");
+    const highTasks = display.filterByPriority("high");
     expect(highTasks.length).toBe(2);
     expect(highTasks[0].title).toBe("Write code");
     expect(highTasks[1].title).toBe("Deploy");
