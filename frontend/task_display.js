@@ -15,7 +15,7 @@ class TaskDisplay {
   }
 
   getTaskCount() {
-    return this.tasks.length.toString();
+    return this.tasks.length;
   }
 }
 
