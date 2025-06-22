@@ -11,6 +11,8 @@ class TaskManager:
 
     def add_task(self, id, title, priority):
         task = Task(id, title, priority)
+        if any(t.id == id for t in self.tasks):
+            return "Task with this ID already exists."
         self.tasks.append(task)
         return task
 
