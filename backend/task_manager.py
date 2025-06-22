@@ -21,8 +21,6 @@ class TaskManager:
             if task.id == id:
                 task.status = new_status
                 return True
-        for task in self.tasks:
-            task.status = new_status
         return False
 
     def get_high_priority_tasks(self):
