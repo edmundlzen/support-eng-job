@@ -30,4 +30,6 @@ class TaskManager:
         for task in self.tasks:
             if task.priority == "high":
                 high_priority.append(task)
+            elif task.priority == 1:
+                high_priority.append(task)
         return high_priority
